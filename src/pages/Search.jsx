@@ -7,9 +7,9 @@ import Aside from "../components/Home/Aside"
 const Search = () => {
     return (
         <>
-        <Box  backgroundImage={'public/ellipse-blur-2.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'right'}>
-        <Box  backgroundImage={'public/ellipse-blur.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>
-        <Box  backgroundImage={'public/Blob-vector.png'} backgroundRepeat={'no-repeat'}>
+        <Box  backgroundImage={'/ellipse-blur-2.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'right'}>
+        <Box  backgroundImage={'/ellipse-blur.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>
+        <Box  backgroundImage={'/Blob-vector.png'} backgroundRepeat={'no-repeat'}>
         <Grid templateColumns={{base : '0.9fr',md : '200px 0.9fr'}} gap={'30px'} justifyContent={{base : 'center', md : "unset"}}>
             <GridItem>
                 <Aside/>

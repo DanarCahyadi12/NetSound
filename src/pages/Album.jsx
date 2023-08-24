@@ -3,11 +3,11 @@ import Aside from '../components/Home/Aside'
 import NewReleaseAlbums from '../components/Albums/NewReleaseAlbums'
 const Album = () =>{
 
-    return (
+return (
         <>
-        <Box backgroundImage={'/public/ellipse.svg' } backgroundRepeat={'no-repeat'}>
-        <Box backgroundImage={"/public/ellipse-blur.svg"} backgroundRepeat={'no-repeat'}>
-        <Box backgroundImage={'/public/ellipse-blur-2.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'right'}>
+        <Box backgroundImage={'/ellipse.svg' } backgroundRepeat={'no-repeat'}>
+        <Box backgroundImage={"/ellipse-blur.svg"} backgroundRepeat={'no-repeat'}>
+        <Box backgroundImage={'/ellipse-blur-2.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'right'}>
         <Grid templateColumns={{md : '200px 1fr',base : '1fr'}} >
             <GridItem>
                 <Aside/>

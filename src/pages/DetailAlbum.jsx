@@ -8,8 +8,8 @@ const DetailAlbum = () => {
 
     return (
         <>
-        <Box backgroundImage={'/public/ellipse-blue.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'top'}>
-        <Box backgroundImage={'/public/ellipse-blur.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'right'}>
+        <Box backgroundImage={'/ellipse-blue.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'top'}>
+        <Box backgroundImage={'/ellipse-blur.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'right'}>
         <Grid templateColumns={{md : '200px 1fr', base : '1fr'}}>
             <GridItem>
                 <Aside/>

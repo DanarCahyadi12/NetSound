@@ -1,6 +1,5 @@
 import useFetch from "../../api/useFetch"
 import { Box,Skeleton,Heading,Text, Grid, GridItem, Avatar,Link ,Image} from "@chakra-ui/react"
-import CutString from "../../helpers/CutString"
 import noteIcon from '../../assets/musical-note.png'
 import CutArtistsString from "../../helpers/CutArtistsString"
 import FormatDate from "../../helpers/FormatDate"

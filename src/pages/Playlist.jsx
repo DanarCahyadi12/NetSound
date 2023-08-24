@@ -5,7 +5,7 @@ import Featured from "../components/Playlists/Featured"
 const Playlist = () => {
     return (
         <>
-        <Box width={'full'} backgroundImage={'public/ellipse-blue.svg'} backgroundRepeat={'no-repeat'} height={'100vh'} backgroundPosition={'left'} > 
+        <Box width={'full'} backgroundImage={'/ellipse-blue.svg'} backgroundRepeat={'no-repeat'} height={'100vh'} backgroundPosition={'left'} > 
         <Grid templateColumns={{md : '200px 1fr',base : '1fr'}} >
             <GridItem>
                 <Aside/>

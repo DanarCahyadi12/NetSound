@@ -11,8 +11,8 @@ const DetailArtists = () => {
 
     return (
         <>
-        <Box backgroundImage={'/public/ellipse.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'center'}>
-        <Box backgroundImage={'/public/ellipse-blur-2.svg'} backgroundRepeat={'no-repeat'}>
+        <Box backgroundImage={'/ellipse.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'center'}>
+        <Box backgroundImage={'/ellipse-blur-2.svg'} backgroundRepeat={'no-repeat'}>
         <Grid templateColumns={{md : '200px 1fr', base : '1fr'}}>
             <GridItem>
                 <Aside/>

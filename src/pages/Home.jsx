@@ -7,8 +7,8 @@ import NewReleaseAlbums from '../components/Home/NewReleaseAlbums';
  function Home() {
 
     return (
-        <Box backgroundImage={'public/ellipse.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'top'}>
-        <Box backgroundImage={'public/ellipse 2.svg'} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}>
+        <Box backgroundImage={'/ellipse.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'top'}>
+        <Box backgroundImage={'/ellipse 2.svg'} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}>
         <Grid templateColumns={{base : '1fr',md : '200px 1fr'}}>
             <GridItem>
                 <Aside/>
