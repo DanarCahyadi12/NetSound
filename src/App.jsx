@@ -9,6 +9,7 @@ import DetailArtists from './pages/DetailArtist'
 import DetailPlaylist from './pages/DetailPlaylist'
 import DetailAlbum from './pages/DetailAlbum'
 function App() {
+  const URL = import.meta.env.VITE_ROUTE_URL
   return (
     <ChakraProvider>
       <Router>
