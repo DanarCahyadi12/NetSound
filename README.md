@@ -45,10 +45,10 @@
   <li>Open folder use CMD</li>
   <li>Run this command "npm install" for install all dependencies and library</li>
   <li>Create a .env file on root folder.</li>
-  <li>Create variable for client ID , name  : VITE_CLIENT_ID and paste your client ID here</li>
-  <li>Create variable  for client secret,  name  : VITE_CLIENT_SECRET and paste your client secret here</li>
-  <li>Create variable  for base url ,name  : VITE_BASE_URL. Copy this  url https://api.spotify.com/v1 and paste on VITE_BASE_URL variable</li>
-  <li>Create variable for url access token, name : 
+  <li>Create variable on .env file for client ID , name  : VITE_CLIENT_ID and paste your client ID here</li>
+  <li>Create variable on .env file for client secret,  name  : VITE_CLIENT_SECRET and paste your client secret here</li>
+  <li>Create variable on .env file for base url ,name  : VITE_BASE_URL. Copy this  url https://api.spotify.com/v1 and paste on VITE_BASE_URL variable</li>
+  <li>Create variable on .env file for url access token, name : 
 VITE_BASE_URL_TOKEN. Copy this url https://accounts.spotify.com/api/token and paste it</li>
 </ul>
 
