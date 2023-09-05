@@ -14,8 +14,8 @@ const Search = () => {
             <GridItem>
                 <Aside/>
             </GridItem>
-            <GridItem padding={3}>
-                <Box  minHeight={'100vh'} maxHeight={'100vh'} marginTop={'20px'}>
+            <GridItem >
+                <Box  minHeight={'100vh'} maxHeight={'100vh'} marginTop={'20px'} marginLeft={'20px'}>
                   <SearchComponents/>
                 </Box>
             </GridItem>

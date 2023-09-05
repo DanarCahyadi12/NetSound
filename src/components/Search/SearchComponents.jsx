@@ -38,7 +38,7 @@ const SearchComponents = () => {
     }
     return (
     <>
-    <InputGroup>    
+    <InputGroup >    
         <Input placeholder='Search.....'  name="query"onChange={HandleInput} />
         <InputRightElement >
         <IconButton

@@ -23,7 +23,7 @@ const Tracks = ({props}) => {
     return (
         <>
         <Heading marginTop={'20px'} >Result tracks</Heading>
-        <Box  height={'100vh'} overflowY={'auto'} paddingRight={'20px'}  paddingBottom={'20px'}>
+        <Box  height={'100vh'} overflowY={'auto'} >
             <Box marginTop={'30px'}>
                 { props.items.map((track,i) => {
                         const image = track.album.images[0].url
@@ -35,7 +35,7 @@ const Tracks = ({props}) => {
                                 <Heading fontSize={{md :'15px',base : '11px'} } >{CutString(80,track.name)}</Heading>
                             </Show>
                             <Hide above="md">
-                                <Heading fontSize={{md : '15px' ,base: '11px'}} >{CutString(13,track.name)}</Heading>
+                                <Heading fontSize={{md : '15px' ,base: '11px'}} >{CutString(16,track.name)}</Heading>
                             </Hide>
                             <Show above="lg">
                             <Box>

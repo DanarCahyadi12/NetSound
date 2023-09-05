@@ -64,26 +64,26 @@ const SearchResult = ({props}) => {
 
     return (
         <>
-         <Box  display={'grid'} gridTemplateColumns={'repeat(4,80px)'}  gap={3} marginTop={'20px'}  >
+         <Box  display={'grid'} gridTemplateColumns={{md :'repeat(4,80px)', base : 'repeat(4,64px)' } }  gap={3} marginTop={'20px'}  >
         {types.tracks ? 
-        <Button name="tracks" onClick={HandleTypes} colorScheme="blue" variant={'solid'} borderRadius={'md'} textAlign={'center'} color={'white'}>tracks</Button> 
+        <Button name="tracks" onClick={HandleTypes} colorScheme="blue" variant={'solid'} borderRadius={'md'} textAlign={'center'} color={'white'} fontSize={{base : '15px'}}>tracks</Button> 
         : 
-        <Button name="tracks" onClick={HandleTypes}  borderRadius={'md'} variant={'outline'} textAlign={'center'} color={'black'}>tracks</Button>}
+        <Button name="tracks" onClick={HandleTypes}  borderRadius={'md'} variant={'outline'} textAlign={'center'} color={'black'} fontSize={{base : '15px'}}>tracks</Button>}
 
         {types.albums ?
-        <Button name="albums" onClick={HandleTypes}  borderRadius={'md'}  colorScheme="blue" variant={'solid'} textAlign={'center'} color={'white'}>albums</Button>
+        <Button name="albums" onClick={HandleTypes}  borderRadius={'md'}  colorScheme="blue" variant={'solid'} textAlign={'center'} color={'white'} fontSize={{base : '15px'}}>albums</Button>
          :
-        <Button name="albums" onClick={HandleTypes}  borderRadius={'md'} textAlign={'center'} variant={'outline'} color={'black'}>albums</Button>}
+        <Button name="albums" onClick={HandleTypes}  borderRadius={'md'} textAlign={'center'} variant={'outline'} color={'black'} fontSize={{base : '15px'}}>albums</Button>}
 
         {types.playlists ?
-        <Button name="playlists" onClick={HandleTypes}  borderRadius={'md'}  colorScheme="blue" variant={'solid'} textAlign={'center'} color={'white'}>playlists</Button> 
+        <Button name="playlists" onClick={HandleTypes}  borderRadius={'md'}  colorScheme="blue" variant={'solid'} textAlign={'center'} color={'white'} fontSize={{base : '15px'}}>playlists</Button> 
         :
-        <Button name="playlists" onClick={HandleTypes}  borderRadius={'md'} textAlign={'center'} variant={'outline'} color={'black'}>playlists</Button>}
+        <Button name="playlists" onClick={HandleTypes}  borderRadius={'md'} textAlign={'center'} variant={'outline'} color={'black'} fontSize={{base : '15px'}}>playlists</Button>}
 
         {types.artists ?
-        <Button name="artists" onClick={HandleTypes}  borderRadius={'md'}  colorScheme="blue" variant={'solid'} textAlign={'center'} color={'white'}>artists</Button> 
+        <Button name="artists" onClick={HandleTypes}  borderRadius={'md'}  colorScheme="blue" variant={'solid'} textAlign={'center'} color={'white'} fontSize={{base : '15px'}}>artists</Button> 
         :
-        <Button name="artists" onClick={HandleTypes} variant={'outline'}  borderRadius={'md'} textAlign={'center'} color={'black'}>artists</Button>}
+        <Button name="artists" onClick={HandleTypes} variant={'outline'}  borderRadius={'md'} textAlign={'center'} color={'black'} fontSize={{base : '15px'}}>artists</Button>}
     </Box>
     
     {types.tracks && <Tracks props={tracks}/>}
