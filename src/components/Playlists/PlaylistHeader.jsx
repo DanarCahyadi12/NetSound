@@ -46,17 +46,17 @@ const PlaylistHeader = ({props}) => {
                 </GridItem>
                 <GridItem colSpan={2} display={'flex'}>
                     <Box display={'flex'}>
-                        <Image src={likeIcon} boxSize={{md : 7 ,base :5}} />
-                        <Text marginLeft={'2'} fontSize={{md : '15px',base : '13px'}}>{FormatNumber(datas.followers.total)} likes</Text>
+                        <Image src={likeIcon} boxSize={{md : 7 ,base :3}} />
+                        <Text marginLeft={'2'} fontSize={{md : '15px',base : '10px'}}>{FormatNumber(datas.followers.total)} likes</Text>
                     </Box>
                     
                     <Box display={'flex'} marginLeft={'3'}>
-                        <Avatar src={userProfile} boxSize={{md : 7 ,base :5}}></Avatar>
-                        <Text marginLeft={'2'} fontSize={{md : '15px',base : '13px'}}>{datas.owner.display_name} </Text>
+                        <Avatar src={userProfile} boxSize={{md : 7 ,base :3}}></Avatar>
+                        <Text marginLeft={'2'} fontSize={{md : '15px',base : '10px'}}>{datas.owner.display_name} </Text>
                     </Box>
                     <Box display={'flex'} marginLeft={'3'}>
-                        <Image src={noteIcon} boxSize={{md : 6 ,base :5}} />
-                        <Text>{FormatNumber(datas.tracks.total)} songs</Text>
+                        <Image src={noteIcon} boxSize={{md : 5 ,base :3}} />
+                        <Text fontSize={{md : '15px' ,base : '10px'}}>{FormatNumber(datas.tracks.total)} songs</Text>
                     </Box>
                 </GridItem>
             </Grid>
