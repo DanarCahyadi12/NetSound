@@ -10,11 +10,11 @@ const Search = () => {
         <Box  backgroundImage={'/ellipse-blur-2.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'right'}>
         <Box  backgroundImage={'/ellipse-blur.svg'} backgroundRepeat={'no-repeat'} backgroundPosition={'bottom'}>
         <Box  backgroundImage={'/Blob-vector.png'} backgroundRepeat={'no-repeat'}>
-        <Grid templateColumns={{base : '0.9fr',md : '200px 0.9fr'}} gap={'30px'} justifyContent={{base : 'center', md : "unset"}}>
+        <Grid templateColumns={{base : '0.9fr',md : '200px 0.9fr'}} gap={'30px'} >
             <GridItem>
                 <Aside/>
             </GridItem>
-            <GridItem >
+            <GridItem padding={3}>
                 <Box  minHeight={'100vh'} maxHeight={'100vh'} marginTop={'20px'}>
                   <SearchComponents/>
                 </Box>
