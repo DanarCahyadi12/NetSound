@@ -11,8 +11,8 @@ import GetAccessToken from "../../api/GetAccessToken"
 import axios from "axios"
 const PlaylistTrack = ({props}) => {
     const {idPlaylist } = props
-    const audioRef = useRef(new Audio)
     const URL =import.meta.env.VITE_BASE_URL
+    const audioRef = useRef(new Audio)
     const [indexButton,setIndexButton] = useState(null)
     
     const [dataHeader,setDataHeader] = useState({
