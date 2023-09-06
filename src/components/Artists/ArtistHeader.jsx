@@ -24,7 +24,7 @@ const ArtistHeader = ({props}) => {
                 <Heading fontSize={'3xl'} >{datas.name}</Heading>
                 <Text fontSize={'1xl'} marginTop={'3'}>{FormatNumber(datas.followers.total)} followers</Text>
                 <Box display={'flex'}>
-                {UpperCaseFirstArrayChar(datas.genres).map((genre,index,arr) => {
+                {datas.genres.length > 0 && UpperCaseFirstArrayChar(datas.genres).map((genre,index,arr) => {
                     return (
                             <Text key={index} fontSize={'1xl'}>{genre}{index !== arr.length-1 && ',' }</Text>
                         

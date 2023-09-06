@@ -76,8 +76,8 @@ const AlbumTrack = ({props}) => {
             <Box display={'grid'} padding={'10px'} borderRadius={'md'}  border={'1px solid black'} marginBottom={'2'} gridTemplateColumns={'0.1fr 1fr 1fr 0.6fr 0.1fr'} justifyContent={'left'} alignItems={'center'} gap={3}>
                 <Box></Box>
                 <Text>Title</Text>
-                <Text>Artist</Text>
-                <Box >
+                <Text marginLeft={{md : 14,base : 0}}>Artist</Text>
+                <Box display={{md : 'block',base :'none'}}>
                 <Image  src={clock}  boxSize={5} marginLeft={'80%'}/>
 
                 </Box>
@@ -92,7 +92,7 @@ const AlbumTrack = ({props}) => {
         {pending && !Error.isError && <Skeleton isLoaded={!pending} height={'50vh'} width={ 'full'} borderRadius={'md'}></Skeleton>}
             {items && items.map((item ,i) => {
             return (
-                <Box display={'grid'} padding={'10px'} key={item.id} borderRadius={'md'}  border={'1px solid black'} marginBottom={'2'} gridTemplateColumns={{md :   '0.1fr fr 1fr 0.3fr 0.1fr' ,base :  '0.1fr 1fr 1fr 0.5fr 0.1fr'}  } justifyContent={'left'} alignItems={'center'} gap={3}>
+                <Box display={'grid'} padding={'10px'} key={item.id} borderRadius={'md'}  border={'1px solid black'} marginBottom={'2'} gridTemplateColumns={{md :   '0.1fr 1fr 1fr 0.3fr 0.1fr' ,base :  '0.1fr 1fr 1fr 0.5fr 0.1fr'}  } justifyContent={'left'} alignItems={'center'} gap={3}>
                 <Text fontSize={{md :'13px',base : '10px'} }>{i+1}</Text>
                 <Show above="md">
                     <Heading fontSize={{md :'15px',base : '11px'} } >{CutString(51,item.name)}</Heading>
@@ -113,7 +113,7 @@ const AlbumTrack = ({props}) => {
 
                 <Hide above="lg">
                 <Box>
-                   {CutArtistsString(15,item.artists).map((data,index,arr) => {
+                   {CutArtistsString(13,item.artists).map((data,index,arr) => {
                        return (
                            <Link href={`/artist/${data.id}`} fontSize={{base : '11px',md : '15px'} } key={data.id}>{data.name} {index !== arr.length -1 && ','}</Link>
                            )
@@ -121,7 +121,7 @@ const AlbumTrack = ({props}) => {
                     }       
                 </Box>
                 </Hide>
-                <Text fontSize={{base : '11px' ,md : '13px'}}  justifySelf={'right'} >{ConvertDuration(item.duration_ms)}</Text>
+                <Text fontSize={{base : '11px' ,md : '13px'}} display={{md : 'block',base :'none'}} justifySelf={'right'} >{ConvertDuration(item.duration_ms)}</Text>
                 <Link href={item.uri} justifySelf={'right'} >
                     {indexButton === i ?  <Image onMouseEnter={() => {
                         PlayAudio(item.preview_url)
