@@ -52,6 +52,6 @@
 VITE_BASE_URL_TOKEN. Copy this url https://accounts.spotify.com/api/token and paste it</li>
 </ul>
 
-<h1>Live On <a href="https://net-sound.vercel.app">https://net-sound.vercel.app</a></h1>
+<h1>Live on <a href="https://net-sound.vercel.app">https://net-sound.vercel.app</a></h1>
 
 
